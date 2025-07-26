@@ -15,7 +15,7 @@ $(obj)/dochecklxdialog:
 	$(Q)$(CONFIG_SHELL) $(check-lxdialog) -check $(HOSTCC) $(HOST_EXTRACFLAGS) $(HOST_LOADLIBES)
 
 hostprogs-y	:= lxdialog
-always		:= $(hostprogs-y) dochecklxdialog
+# always		:= $(hostprogs-y) dochecklxdialog
 
 lxdialog-objs := checklist.o menubox.o textbox.o yesno.o inputbox.o \
 		 util.o lxdialog.o msgbox.o
